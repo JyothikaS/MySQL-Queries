@@ -1,0 +1,17 @@
+CREATE TABLE cab(
+cid int primary key auto_increment,
+license_plate varchar(50) not null,
+cmodel varchar(100),    -- 1 to 1 or 1to many eg
+m_year int not null,
+owner_id varchar(50) not null,
+capacity int not null,
+active varchar(10) not null
+);
+CREATE TABLE driver(
+driver_id int primary key auto_increment,
+dname varchar(50) not null,
+ddob varchar(100) not null,  
+license_no varchar(50) not null,
+exp_date varchar(150) not null,
+driver_active varchar(10) not null
+);

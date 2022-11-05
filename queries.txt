@@ -1,0 +1,49 @@
+
+-- CREATE TABLE customers(
+-- id int PRIMARY KEY auto_increment,
+-- name varchar(50) not null,
+-- email varchar(50) not null unique,
+-- age int default 18 not null,
+-- country varchar(5) not null,
+-- dob date
+-- );
+-- INSERT INTO customers(name, email, country) VALUES 
+-- ('User1', 'user1@gmail.com', 'IN');
+-- INSERT INTO customers(name, email, country, age) VALUES 
+-- ('User2', 'user2@gmail.com', 'IN', 19),
+-- ('User3', 'user3@gmail.com', 'US', 23);
+-- INSERT INTO customers(name, email, country, age, dob) VALUES 
+-- ('sam', 'sam@gmail.com', 'AUS', 19, '1999-03-11');
+
+-- SELECT * FROM customers;
+-- SELECT name, email, age, dob, country from CUSTOMERS;
+-- SELECT name, email, age, dob, country from CUSTOMERS limit 3;
+-- SELECT name, email, age, dob, country from CUSTOMERS limit 2 offset 2;
+-- SELECT * from customers WHERE country ='IN';
+-- SELECT * from customers WHERE country ='IN' OR country ='AUS';
+-- SELECT * from customers WHERE country IN('IN', 'AUS', 'US');
+-- SELECT * FROM customers WHERE age >= 15 AND age <=20;
+-- SELECT * FROM customers WHERE age BETWEEN 15 AND 20;
+-- UPDATE customers set age = 20 WHERE id = 4;
+-- lab session
+-- INSERT INTO users(id, name, email, age, dob) VALUES (1, 'jyothi', 'jo@gmail.com', 15, '2006-03-11');
+-- INSERT INTO users(id, name, email, age, dob) VALUES (2, 'nirupama', 'niru@gmail.com', 20, '2002-03-11');
+-- INSERT INTO users(id, name, email, age, dob) VALUES 
+-- (3, 'karthika', 'karthi@gmail.com', 24, '1998-03-11'),
+-- (4, 'nanadana', 'nandu@gmail.com', 23, '1999-03-11');
+
+-- CREATE TABLE users(
+-- id int ,
+-- name varchar(50),
+-- email varchar(50),
+-- age int default 18,
+-- dob date
+-- );
+
+-- INSERT INTO users(id, name, email, age, dob) VALUES (1, 'jyothi', 'jo@gmail.com', 15, '2006-03-11');
+-- INSERT INTO users(id, name, email, age, dob) VALUES (2, 'nirupama', 'niru@gmail.com', 20, '2002-03-11');
+-- INSERT INTO users(id, name, email, age, dob) VALUES (2, 'nirupama', 'niru@gmail.com', 20, '2002-03-11');
+
+
+
+

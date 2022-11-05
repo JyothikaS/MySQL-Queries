@@ -1,0 +1,6 @@
+CREATE VIEW viewallCustomers
+AS
+SELECT id as Id, name as Fullname, email as Email FROM customers
+ORDER BY id desc;
+
+SELECT * FROM viewallCustomers;

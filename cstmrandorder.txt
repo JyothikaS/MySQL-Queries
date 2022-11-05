@@ -1,0 +1,57 @@
+-- CREATE TABLE orders(
+-- id int primary key auto_increment,
+-- product varchar(150) not null,
+-- quantity int not null CHECK(quantity >= 1),    -- 1 to 1 or 1to many eg
+-- amount int not null default 0,
+-- customer_id int not null,
+
+-- CONSTRAINT FK_Order_CustomerId foreign key (customer_id) references customers(id) on delete cascade
+-- );
+
+-- DELETE FROM customers WHERE id=2;
+-- drop table orders;
+-- CREATE TABLE orders(
+-- id int primary key auto_increment,
+-- product varchar(150) not null,
+-- quantity int not null CHECK(quantity >= 1),    -- 1 to 1 or 1to many eg
+-- amount int not null default 0,
+-- customer_id int not null,
+
+-- CONSTRAINT FK_Order_CustomerId foreign key (customer_id) references customers(id) 
+-- );
+
+-- CREATE TABLE orders(
+-- id int primary key auto_increment,
+-- product varchar(150) not null,
+-- quantity int not null CHECK(quantity >= 1),    -- 1 to 1 or 1to many eg
+-- amount int not null default 0,
+-- customer_id int,
+
+-- CONSTRAINT FK_Order_CustomerId foreign key (customer_id) references customers(id) on delete set null
+-- );
+-- delete from customers where id=1;
+
+-- truncate table orders;
+-- delete from customers where id>=1;
+
+-- INSERT INTO customers (name, email, age, country) VALUES 
+-- ('User1', 'user1@gmail.com', 20, 'AUS'),
+-- ('User2', 'user2@gmail.com', 21, 'IN'),
+-- ('User3', 'user3@gmail.com', 21, 'US'),
+-- ('User4', 'user4@gmail.com', 18, 'AUS'),
+-- ('User5', 'user5@gmail.com', 26, 'UK');
+
+-- INSERT INTO orders (product, quantity, amount, customer_id) VALUES 
+-- ('product 1', 3,  200, 5),
+-- ('product 2', 4,  210, 6),
+-- ('product 3', 5, 219, 7),
+-- ('product 4', 2, 180, 8),
+-- ('product 5', 3, 260, 9);
+-- select product from orders where customer_id=(select id from customers where email="user2@gmail.com");
+-- select * from orders where customer_id=(select id from customers where email="user2@gmail.com");
+
+-- using @id to retrieve
+-- SELECT @id:=id FROM customers WHERE email = 'user1@gmail.com';
+-- SELECT * FROM orders WHERE customer_id=@id;
+
+

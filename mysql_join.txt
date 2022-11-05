@@ -1,0 +1,40 @@
+-- SELECT customers.id, name, email, product, quantity, amount from customers inner join orders on customers.id = orders.customer_id;
+
+-- SELECT customers.id, name, email, product, quantity, amount from customers inner join orders 
+-- on customers.id = orders.customer_id
+-- WHERE customers.id in (7, 8, 9);
+
+-- right join
+-- SELECT customers.id, name, email, product, quantity, amount from customers right join orders 
+-- on customers.id = orders.customer_id
+-- WHERE customers.id in (7, 8, 9);
+
+-- ALTER TABLE orders drop  column product;
+
+-- CREATE TABLE products(
+--  id int PRIMARY KEY auto_increment,
+--  name varchar(150) not null,
+--  price int not null default 0 CHECK(price >= 0)
+-- );
+
+-- ALTER TABLE orders ADD COLUMN
+-- product_id INT;
+-- ALTER TABLE orders MODIFY COLUMN
+-- product_id INT NOT NULL;
+
+-- ALTER TABLE orders ADD CONSTRAINT FK_orders_productId FOREIGN KEY (product_id) REFERENCES products(id);
+
+-- TO GET CSTMR INFO, ORDER INFO AND PRDT INFO
+
+-- SELECT customers.id, customers.name as customer_name, customers.email, products.name as product_name, orders.quantity, orders.amount 
+-- from
+-- customers inner join orders on customers.id = orders.customer_id
+-- inner join products on orders.product_id = product_id;
+
+-- groupby 
+-- SELECT *, COUNT(id) FROM orders group by product_id;
+
+
+SELECT * FROM users WHERE id = 2;
+
+
